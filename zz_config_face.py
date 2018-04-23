@@ -5,7 +5,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--data_path', default="../", type=str)
 parser.add_argument('--metadata_path',default="../train.npy",type=str)
-parser.add_argument('--check_point_path', default="./ckpt_0422/my_model.ckpt", type=str)
+parser.add_argument('--CheckPointPath', default="./ckpt_0422/my_model.ckpt", type=str)
 
 parser.add_argument("--batch_size", default=32, type=int)
 parser.add_argument("--height", default=28, type=int)
