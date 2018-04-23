@@ -139,7 +139,7 @@ def train(args, from_epoch=0):
         if from_epoch == 0:
             sess.run(tf.global_variables_initializer())
         else:
-            saver.restore(sess, CheckPointPATH+"-{}".format(from_epoch))
+            saver.restore(sess, args.CheckPointPath+"-{}".format(from_epoch))
         for epoch in range(from_epoch, from_epoch+args.epochs):
             loops = num_train//args.batch_size
             curr_index = 0
@@ -166,7 +166,7 @@ def train(args, from_epoch=0):
 
 
             if epoch % 30 == 0:
-                saver.save(sess, CheckPointPATH, global_step=epoch)
+                saver.save(sess, args.CheckPointPath, global_step=epoch)
 
             #### get the validate accuracy
             acc = []
