@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 from zz_model_dynm_classes import CapsNet
 from zz_config_face import args
-import Utils_Data
+# import Utils_Data
 
 #############  for different datasets, only need to change zz_config_face
 #############                for all three .py files
