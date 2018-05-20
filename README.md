@@ -22,9 +22,11 @@ For the landmark dataset retrieval result, it is saved in `retrieval_accu_label.
 The "True label" in .txt file means the query label, and the images in `./retrieval` folder are in format "querylabel_i.jpg".
 
 A typical result is, query image:
+
 ![Alt text](./results/0_q.jpg)
 
 The top 3 retrieved images are:
+
 ![Alt text](./results/0_0.jpg)
 ![Alt text](./results/0_1.jpg)
 ![Alt text](./results/0_2.jpg)
